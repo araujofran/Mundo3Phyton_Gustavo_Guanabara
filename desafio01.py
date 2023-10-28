@@ -25,7 +25,7 @@ while resp  in 'S':
      if resp == 'N':
           break
 
-print (f'O numero digitado foi {digite} e a frase por extenso é {extenso[digite]}!')
+
 print ('OBRIGADO!')
 
 
