@@ -5,15 +5,19 @@ b) Exibir apenas os 5 primeiros
 c) Exibir depois a zona de rebaixamento
 d) Mostra sorted (ordem alfabética)
 c) Exibir em que posição está o Corinthians
+d) aprender a mudar o valor da posição 0 para 1
 
 '''
 
 colocação = ('Corinthians','Palmeiras','São Paulo','Botafogo','Santos','Flamengo','Inter','Vasco')
 print('\n')
 
-print(f' No total foram {len(colocação)} colocados! \n' )
+print(f' No total foram {len(colocação)} colocados!  \n' )
 print (f'Os cinco primeiros colocados foram: {colocação[:5]} \n')
 print(f'Os que ficaram na zona de rebaixamento foram {colocação[5:]} \n')
 print(f' A ordem alfabetica dos times {sorted(colocação)}\n')
 
-print (f'O Corinthians meu timão ocupa a posição {colocação.index('Corinthians')}')
+print (f'O Corinthians meu timão ocupa a posição {colocação.index('Corinthians')+1} º Lugar!\n')
+
+
+
