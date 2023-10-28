@@ -11,7 +11,7 @@ while True:
    
    print('Digite novamente.', end=' ')
     
-  
+print (f'O numero digitado foi {digite} e a frase por extenso é {extenso[digite]}!')  
 
 
 
