@@ -8,17 +8,12 @@
 
 import random
 
-c=0
-
-maior =0
-menor = 0
-tupla = 0,
-while c < 5:
-   
-    numAle = random.randint (0,5)
-    print (numAle, end=' ')
-    c+=1
-    tupla = tupla + (numAle)
+numAle = (random.randint (0,5,),random.randint (0,5),random.randint (0,5),random.randint (0,5),random.randint (0,5))
+print ('Os valores sorteados foram :' , end=' ')
+for n in numAle:
+    print (f'{n}',end= ' ')
 print ('\n')
-print (8*'h')
-print (tupla)
+print (f'O maior valor sorteado foi {max(numAle)}')
+print (f'O menor valor sorteado foi {min(numAle)}')
+    
+   
