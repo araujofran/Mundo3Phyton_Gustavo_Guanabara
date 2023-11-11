@@ -1,8 +1,15 @@
-lista = [1,2,3, 4,5 ]
 
-print (' Há o numero 5 na lista?' )
+maior = 0
+menor = 0
+r= 'S'
+while r == 'S':
+    num = int (input('Digite um valor: '))
+    
+    if num > maior:
+        maior = num
+    else:
+        menor = num
+    r = (input('Quer continuar?[S/N]: ')).strip().upper()
 
-print (f' Essa lista contém os seguinte numeros {lista} pela varredura ')
+print (f' O maior valor é {maior} e o menor valor é {menor}.')
 
-for x=5 in enumerate (lista):
-    print(x)
