@@ -12,7 +12,7 @@ while r=='S':
     dicionario['nome']=str(input('Nome do Jogador: '))
     p=int(input(f'Quantas partidas {dicionario["nome"]} jogou? ' ))
     while partidas<p:
-        g=int(input(f'Quantos gols na partida {count}? '))
+        g=int(input(f'Quantos gols na partida {count+1}? '))
         count+=1
         partidas+=1
         gols.append(g)
@@ -32,15 +32,27 @@ while r=='S':
         break
 
 print(40*'-=')
-m=0
-while m <1:
-    for k in lista:
-        for k in k.keys():
-            print (f'{k}',end=' ')
-    m+=1
+print('cod ',end='')
+for i in dicionario.keys():
+    print(f'{i:<15} ',end='')
 print()
 print(40*'-=')
-for v in lista:
-    for v in v.values():
-        print (f'{v} ', end=' ')
+
+for k,v in enumerate(lista):
+    print(f' {k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
     print()
+print(40*'-=')
+while True:
+    busca = int (input('Mostrar dados de qual jogador? (999 para parar) '))
+    if busca == 999:
+        break
+    if busca >= len(lista):
+        print(f'ERRO! Não existe jogador com código {busca}! ')
+    else:
+        print(f' --- LEVANTAMENTO DO JOGADOR {lista[busca]["nome"]}: ')
+        for i, g in enumerate(lista[busca]["gols"]):
+            print(f'     No jogo {i+1} fez {g} gols.')
+        print(40*'-=')
+print('<< VOLTE SEMPRE >>')
