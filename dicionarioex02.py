@@ -1,10 +1,10 @@
 import random,time
 
 jogadado={}
-jogadado['jogador1']= random.randint(0,6)
-jogadado['jogador2']= random.randint(0,6)
-jogadado['jogador3']= random.randint(0,6)
-jogadado['jogador4']= random.randint(0,6)
+jogadado['jogador1']= random.randint(1,6)
+jogadado['jogador2']= random.randint(1,6)
+jogadado['jogador3']= random.randint(1,6)
+jogadado['jogador4']= random.randint(1,6)
 
 
 
